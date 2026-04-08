@@ -16,7 +16,7 @@ function Avatar({ user, size = 'normal' }) {
   );
 }
 
-export default function Sidebar({ contacts, threads, activeId, onSelect, typingUsers, me }) {
+export default function Sidebar({ contacts, threads, activeId, onSelect, typingUsers, me, onLogout }) {
   return (
     
     <aside className="sidebar">
@@ -84,6 +84,12 @@ export default function Sidebar({ contacts, threads, activeId, onSelect, typingU
             </div>
           );
         })}
+      </div>
+      
+      <div className="sidebar-footer">
+        <button className="logout-btn" onClick={onLogout} type="button">
+          Logout
+        </button>
       </div>
     </aside>
   );

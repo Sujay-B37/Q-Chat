@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Header({ contact }) {
+export default function Header({ contact, theme, onToggleTheme }) {
   const statusLabel = {
     online:  'Online',
     away:    'Away',
@@ -30,6 +30,14 @@ export default function Header({ contact }) {
       </div>
 
       <div className="header-actions">
+        <button
+          className="icon-btn"
+          title={theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'}
+          onClick={onToggleTheme}
+          type="button"
+        >
+          {theme === 'dark' ? '☀️' : '🌙'}
+        </button>
         <button className="icon-btn" title="Search in chat">🔍</button>
         <button className="icon-btn" title="Call">📞</button>
         <button className="icon-btn" title="More">⋯</button>

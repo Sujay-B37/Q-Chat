@@ -26,7 +26,7 @@ function groupByDate(messages) {
   return groups;
 }
 
-export default function ChatWindow({ contact, messages, isTyping, onSend, me }) {
+export default function ChatWindow({ contact, messages, isTyping, onSend, me, theme, onToggleTheme }) {
   const bottomRef = useRef(null);
 
   // Auto-scroll to bottom on new messages / typing toggle
@@ -41,7 +41,7 @@ export default function ChatWindow({ contact, messages, isTyping, onSend, me }) 
       {/* Subtle dot-grid background */}
       <div className="chat-bg-pattern" />
 
-      <Header contact={contact} />
+      <Header contact={contact} theme={theme} onToggleTheme={onToggleTheme} />
 
       {/* Scrollable message area */}
       <div className="messages-container">
