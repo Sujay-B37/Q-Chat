@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Q-Chat/static/css/main.72277f03.css",
+    "main.js": "/Q-Chat/static/js/main.5db620cc.js",
+    "index.html": "/Q-Chat/index.html",
+    "main.72277f03.css.map": "/Q-Chat/static/css/main.72277f03.css.map",
+    "main.5db620cc.js.map": "/Q-Chat/static/js/main.5db620cc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.72277f03.css",
+    "static/js/main.5db620cc.js"
+  ]
+}
